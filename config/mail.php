@@ -61,8 +61,9 @@ return [
     ],
 */
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'micurso@israjimenez.com'),
-        'name' => env('MAIL_FROM_NAME', 'Israel Jimenez'),
+       // 'address' => env('MAIL_FROM_ADDRESS', 'info@israjimenez.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'erisjinver@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Ernesto Israel'),
     ],
 
 
@@ -90,10 +91,13 @@ return [
     |
     */
 
+    //'username' => env('postmaster@sandbox40fd77d516e04106b43d960471f14fd8.mailgun.org'),
+
+   // 'password' => env('f992b2a3c707bd3b09737fa93d9dce92-baa55c84-ca33ee6e'),
+
     'username' => env('MAIL_USERNAME'),
 
     'password' => env('MAIL_PASSWORD'),
-
     /*
     |--------------------------------------------------------------------------
     | Sendmail System Path
@@ -126,6 +130,13 @@ return [
         ],
     ],
 
+/*/
+
+    'mailgun' => [
+        'domain' => env('sandbox40fd77d516e04106b43d960471f14fd8.mailgun.org'),
+        'secret' => env('f992b2a3c707bd3b09737fa93d9dce92-baa55c84-ca33ee6'),
+    ],
+*/
     /*
     |--------------------------------------------------------------------------
     | Log Channel

@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/mail', 'mailController@enviarmail');
+/*
+Route::get('/',function(){
+
+		$datos=[
+			"titulo"=>"Hola Destinatarios",
+			"contenido"=>"Esto es la primer prueba de envio"
+		];
+		Mail::send("emails.test",$datos,function($mensaje){
+			$mensaje->to("erisjinver@gmail.com","Israel")->subject("Mensaje importante de prueba");
+		});
+	
+});
+*/
