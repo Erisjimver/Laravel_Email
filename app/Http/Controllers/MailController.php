@@ -17,7 +17,7 @@ class MailController extends controller
 		Mail::send("emails.test",$datos,function($mensaje){
 			$mensaje->to("erisjinver@gmail.com", "Israel")->subject("Mensaje importante de prueba");
 		});
-		return "Enviar mail";
+		return "Email 2 enviado con exito";
 	}
 
 }

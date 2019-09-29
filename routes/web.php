@@ -15,17 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/mail', 'mailController@enviarmail');
-/*
-Route::get('/',function(){
+Route::get('/mail', 'MailController@enviarmail');
+
+Route::get('/sendmail',function(){
 
 		$datos=[
 			"titulo"=>"Hola Destinatarios",
 			"contenido"=>"Esto es la primer prueba de envio"
 		];
 		Mail::send("emails.test",$datos,function($mensaje){
-			$mensaje->to("erisjinver@gmail.com","Israel")->subject("Mensaje importante de prueba");
+			$mensaje->from('ejimenezv889@utb.edu.ec','curso laravel');
+			$mensaje->to("erisjinver@gmail.com")->subject("Mensaje importante de prueba");
 		});
+		return "Email enviado con exito";
 	
 });
-*/

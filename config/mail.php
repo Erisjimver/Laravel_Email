@@ -30,6 +30,7 @@ return [
     */
 
     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+//    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,6 +44,7 @@ return [
     */
 
     'port' => env('MAIL_PORT', 587),
+//    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +64,7 @@ return [
 */
     'from' => [
        // 'address' => env('MAIL_FROM_ADDRESS', 'info@israjimenez.com'),
-        'address' => env('MAIL_FROM_ADDRESS', 'erisjinver@gmail.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'ejimenezv889@utb.edu.ec'),
         'name' => env('MAIL_FROM_NAME', 'Ernesto Israel'),
     ],
 
@@ -130,13 +132,7 @@ return [
         ],
     ],
 
-/*/
 
-    'mailgun' => [
-        'domain' => env('sandbox40fd77d516e04106b43d960471f14fd8.mailgun.org'),
-        'secret' => env('f992b2a3c707bd3b09737fa93d9dce92-baa55c84-ca33ee6'),
-    ],
-*/
     /*
     |--------------------------------------------------------------------------
     | Log Channel
