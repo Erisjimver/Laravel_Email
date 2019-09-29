@@ -28,5 +28,5 @@ Route::get('/sendmail',function(){
 			$mensaje->to("erisjinver@gmail.com")->subject("Mensaje importante de prueba");
 		});
 		return "Email enviado con exito";
-	
+	//agregue este comentario
 });
