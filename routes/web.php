@@ -28,5 +28,22 @@ Route::get('/sendmail',function(){
 			$mensaje->to("erisjinver@gmail.com")->subject("Mensaje importante de prueba");
 		});
 		return "Email enviado con exito";
-	
+	//agregue este comentario
+});
+
+
+
+Route::get('/send',function(){
+
+		$datos=[
+			"titulo"=>"Hola Destinatarios",
+			"contenido"=>"Esto es la primer prueba de envio"
+		];
+		Mail::send("emails.test",$datos,function($mensaje){
+			$mensaje->from('cyberiv10@gmail.com','mensaje de prueba gmail');
+			$mensaje->to("erisjinver@hotmail.com")->subject("Envio desde gmail");
+
+		});
+		return "Email enviado con exito";
+	//agregue este comentario
 });
