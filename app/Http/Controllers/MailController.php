@@ -11,7 +11,7 @@ class MailController extends controller
 		
 
 		$datos=[
-			'titulo'=>'Hola Destinatarios',
+			'titulo'=>'Hola Destinatarios Prueba gmail',
 			'contenido'=>'Esto es la primer prueba de envio'
 		];
 		Mail::send("emails.test",$datos,function($mensaje){
